@@ -38,33 +38,38 @@ nav {
   align-items: center;
 }
 
-/*  Suchleiset beginnen  */
 
+.flex-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-secondary);
+}
+
+/*  Suchleiset beginnen  */
 .search-container {
   position: relative;
-  width: 80px;
-  transition: width 0.5s ease;
+  width: 300px;
 }
 
 .search-container input {
-  width: 80px;
+  width: 100%;
   height: 45px;
-  padding: 10px;
-  background: transparent;
+  padding: 10px 40px 10px 16px;
+  background: var(--card-background);
   border: 2px solid var(--primary-color);
-  border-radius: 25px;
+  border-radius: 50px;
   font-size: 1rem;
   color: var(--text-primary);
   outline: none;
-  transition: all 0.5s ease;
+  transition: border-color 0.2s ease;
 }
 
-.search-container:hover input,
 .search-container input:focus {
-  width: 300px;
-  background: var(--card-background);
-  border-radius: 8px;
-  padding-right: 40px;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
 }
 
 .search-icon {
@@ -75,16 +80,47 @@ nav {
   width: 20px;
   height: 20px;
   fill: var(--primary-color);
-  transition: opacity 0.2s ease;
 }
 
-.search-container:hover .search-icon {
-  opacity: 1;
-}
+
+
 /* Suchleiset Ende */
+/* ! filter */
+.filter-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.filter-select {
+  padding: 8px 16px;
+  border: 1px solid var(--text-secondary);
+  border-radius: 8px;
+  background-color: var(--card-background);
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.filter-select:hover {
+  border-color: var(--primary-color);
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
+}
+/* ! filter ende */
+
+
+
+
+
 /* ************ HEADER STYLING ENDE ********** */
 
-.news-container {
+.logo-wrapper{
   background-color: var(--primary-color);
   color: var(--card-background);
   padding: 2px 0 2px 6px;
