@@ -2,7 +2,6 @@ import ky from "ky";
 import { NewsApiResponse } from "./news-types";
 
 const APIKEY = import.meta.env.VITE_PRIVATE_KEY;
-console.log(APIKEY);
 
 async function getFilteredArticles(keyword: string, lang: string, sortby: string) {
     try {
