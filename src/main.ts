@@ -1,2 +1,2 @@
-const APIKEY = import.meta.env.VITE_NEWS_API_KEY;
+const APIKEY = import.meta.env.VITE_PRIVATE_KEY
 console.log(APIKEY);
