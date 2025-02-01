@@ -4,13 +4,13 @@ type NewsApiResponse ={
   articles: Article[];
 }
 
-// type Source = {
-//   id: string | null;
-//   name: string;
-// }
+type Source = {
+  id: string | null;
+  name: string;
+}
 
 type Article = {
-  // source: Source;
+  source: Source;
   author: string | null;
   title: string;
   description: string;
@@ -20,5 +20,5 @@ type Article = {
   content: string;
 }
   
-export type { NewsApiResponse, Article };
+export type { NewsApiResponse, Source, Article };
   
